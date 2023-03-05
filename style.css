@@ -1,0 +1,507 @@
+body {
+  margin: 0px;
+}
+body .inicio {
+  background-image: url(./img/fondo1.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-bottom-left-radius: 13%;
+}
+body .inicio header {
+  display: flex;
+}
+body .inicio header h1 {
+  color: white;
+  margin-left: 14.5px;
+  font-size: 23px;
+}
+body .inicio header button {
+  color: white;
+  background-color: transparent;
+  border: 0px;
+  width: 42px;
+  height: 40px;
+  font-size: 18px;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+body .inicio header button:focus .menu {
+  display: block;
+}
+body .inicio header button .menu {
+  background-color: rgba(63, 125, 154, 0.792);
+  color: white;
+  display: none;
+  position: relative;
+  width: 130px;
+  height: auto;
+  text-align: left;
+  padding-left: 1px;
+  top: 24px;
+  right: 86px;
+}
+body .inicio header button .menu ul {
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: repeat(4, 1fr);
+  margin-top: 0px;
+  padding: 0px;
+}
+body .inicio header button .menu ul a {
+  padding: 9px 24px 9px 10px;
+}
+body .inicio header button .menu ul a:hover {
+  background-color: rgba(52, 103, 127, 0.792);
+  border-radius: 2px;
+}
+body .inicio .titulo {
+  text-align: -webkit-center;
+}
+body .inicio .titulo h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 34px;
+}
+body .inicio .titulo .input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: white;
+  width: 210px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+}
+body .inicio p {
+  color: white;
+  text-align: center;
+  margin-top: 75px;
+  padding: 15px;
+}
+body .propiedades .propie-text {
+  text-align: left;
+  margin-left: 14.5px;
+  margin-top: 48px;
+}
+body .propiedades .propie-text h1 {
+  color: black;
+  width: 40%;
+  margin-bottom: 0px;
+  font-size: 30px;
+}
+body .propiedades .propie-text p {
+  color: rgb(145, 145, 145);
+  margin-top: 10px;
+}
+body .propiedades .carousel {
+  display: flex;
+  margin: auto;
+  overflow: scroll;
+  width: 82%;
+  padding: 10px 20px 60px 20px;
+  flex-direction: row;
+}
+body .propiedades .carousel .elemento {
+  flex: 1 0 auto;
+  margin: 10px 60px 30px 20px;
+  background-color: rgb(255, 255, 255);
+  width: 230px;
+  height: 290px;
+  box-shadow: 5px 50px 31px 1px rgba(0, 0, 0, 0.5);
+}
+body .propiedades .carousel .elemento img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+body .propiedades .carousel .elemento .descripcion {
+  background-color: white;
+  position: relative;
+  bottom: 73px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+body .propiedades .carousel .elemento .descripcion .subtitulo {
+  color: black;
+  font-family: math;
+  margin-bottom: 2px;
+}
+body .propiedades .carousel .elemento .descripcion .precio {
+  color: rgb(100, 100, 100);
+  margin: 5px 3px;
+}
+body .propiedades .carousel .elemento .descripcion .separador {
+  width: 75%;
+  color: rgb(168, 168, 168);
+  margin: 0px 28px;
+}
+body .propiedades .carousel .elemento .descripcion .dep {
+  color: rgb(153, 153, 153);
+  display: flex;
+  justify-content: space-evenly;
+}
+body .propiedades .ver {
+  justify-content: center;
+  display: flex;
+  color: rgb(143, 143, 143);
+}
+body .propiedades .ver .i {
+  color: rgb(74, 74, 255);
+}
+body .servicios {
+  background: linear-gradient(137deg, rgb(164, 0, 161) 5%, rgb(84, 0, 145) 67%, rgb(4, 0, 123) 94%);
+  padding-bottom: 20px;
+  border-top-right-radius: 65px;
+}
+body .servicios .texto-2 {
+  font-family: monospace;
+  text-align: center;
+}
+body .servicios .texto-2 h1 {
+  color: white;
+  margin-bottom: 4px;
+  font-size: 28px;
+  padding-top: 55px;
+}
+body .servicios .texto-2 p {
+  color: rgba(141, 141, 141, 0.831);
+  width: 50%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+body .servicios .grid {
+  display: flex;
+  flex-direction: column;
+}
+body .servicios .grid .bloque {
+  background-color: white;
+  width: 230px;
+  height: 330px;
+  border-radius: 12px;
+  margin: 10px 39px;
+  text-align: left;
+  padding: 6px;
+}
+@media screen and (min-width: 900px) {
+  body .servicios .grid .bloque {
+    margin: 20px;
+  }
+}
+body .servicios .grid .bloque .img {
+  display: block;
+  width: 130px;
+  height: 120px;
+  padding-top: 10px;
+}
+body .servicios .grid .bloque .subt-2 {
+  color: black;
+  font-size: 29px;
+  width: 50%;
+}
+body .servicios .grid .bloque .descrip-2 {
+  color: gray;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+body .servicios .grid .bloque .explore {
+  color: rgb(108, 108, 108);
+  font-size: 17px;
+}
+body .servicios .grid .bloque .explore .icono {
+  color: black;
+}
+@media screen and (min-width: 900px) {
+  body .servicios .grid {
+    flex-direction: row;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+}
+body .ciudades {
+  text-align: left;
+  font-family: system-ui;
+  margin: 30px 0px;
+}
+body .ciudades .texto-3 {
+  margin-left: 14.5px;
+}
+body .ciudades .texto-3 h1 {
+  color: black;
+  width: 35%;
+  margin: 0px;
+}
+body .ciudades .texto-3 p {
+  color: rgb(142, 142, 142);
+  margin: 5px 0px 30px 0px;
+}
+body .ciudades .grid-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 18px;
+  font-family: monospace;
+}
+body .ciudades .grid-2 .block {
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  width: 290px;
+  height: 260px;
+  margin: auto;
+  text-align: left;
+  padding: 10px;
+  box-shadow: 4px 3px 8px 0px rgba(0, 0, 0, 0.7);
+}
+body .ciudades .grid-2 .block .cuidad-n {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 0px;
+}
+body .ciudades .grid-2 .block .cuidad-p {
+  font-size: 15px;
+  margin: 0px 0px 155px 0px;
+  color: white;
+}
+body .ciudades .grid-2 .block .prop {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  width: 145px;
+  padding: 8px;
+  box-shadow: 6px 4px 0px 1px rgba(0, 0, 0, 0.65);
+  border: none;
+}
+body .venta {
+  background: linear-gradient(137deg, rgb(164, 0, 161) 5%, rgb(84, 0, 145) 67%, rgb(4, 0, 123) 94%);
+  padding-bottom: 20px;
+  border-top-left-radius: 65px;
+  margin: 40px 0px;
+}
+body .venta .texto-5 {
+  text-align: center;
+}
+body .venta .texto-5 h1 {
+  font-size: 33px;
+  color: white;
+  padding: 80px 20px 5px 40px;
+}
+body .venta .texto-5 p {
+  color: white;
+}
+body .venta .cont {
+  margin: 20px;
+}
+body .venta .cont .img-2 {
+  width: 300px;
+  height: 290px;
+  border-radius: 4px;
+  box-shadow: -10px 12px 0px 0px rgb(255, 200, 0);
+}
+body .venta .cont .buscador {
+  padding: 2px;
+  border-radius: 5px;
+  width: auto;
+  height: 52px;
+  border: none;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  position: relative;
+  bottom: 230px;
+  right: 15px;
+}
+body .venta .cont .buscador .icon-b {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: linear-gradient(137deg, rgb(164, 0, 161) 5%, rgb(84, 0, 145) 67%, rgb(4, 0, 123) 94%);
+}
+body .venta .cont .buscador .busca {
+  display: inline-block;
+  text-align: left;
+}
+body .venta .cont .buscador .busca h2 {
+  margin: 2px 0px;
+}
+body .venta .cont .buscador .busca p {
+  margin: 0px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: gray;
+}
+body .agentes {
+  margin: 20px 0px;
+}
+body .agentes .texto-4 {
+  margin-left: 14.5px;
+  font-family: sans-serif;
+}
+body .agentes .texto-4 h1 {
+  color: black;
+  width: 65%;
+  font-size: 25px;
+  margin-bottom: 0px;
+}
+body .agentes .texto-4 p {
+  margin: 4px 0px 20px 0px;
+  font-size: 13px;
+  color: rgb(139, 139, 139);
+}
+body .agentes .carousel-2 {
+  display: flex;
+  margin: auto;
+  overflow: scroll;
+  width: 82%;
+  padding: 10px 20px 60px 20px;
+  flex-direction: row;
+}
+body .agentes .carousel-2 .elemento-2 {
+  flex: 1 0 auto;
+  margin: 10px 60px 30px 20px;
+  background-color: rgb(255, 255, 255);
+  width: 230px;
+  height: 290px;
+  box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.6);
+}
+body .agentes .carousel-2 .elemento-2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+body .agentes .carousel-2 .elemento-2 .descripcion-2 {
+  background-color: white;
+  position: relative;
+  bottom: 73px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+body .agentes .carousel-2 .elemento-2 .descripcion-2 .subtitulo {
+  color: black;
+  font-family: math;
+  margin-bottom: 2px;
+  padding: 4px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+body .agentes .carousel-2 .elemento-2 .descripcion-2 .tel {
+  color: rgb(153, 153, 153);
+  margin: 8px 5px 10px 10px;
+  border-top: 1px solid;
+}
+body .agentes .carousel-2 .elemento-2 .descripcion-2 .tel .num {
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding-top: 2px;
+}
+body .agentes .carousel-2 .elemento-2 .descripcion-2 .tel .gmail {
+  margin-top: 2px;
+  padding-bottom: 4px;
+}
+body .agentes .ver-2 {
+  justify-content: center;
+  display: flex;
+  color: rgb(143, 143, 143);
+}
+body .encontrar {
+  margin: 25px 0px;
+}
+body .encontrar img {
+  width: auto;
+  height: 200px;
+}
+body .encontrar .texto-6 {
+  margin-left: 14.5px;
+}
+body .encontrar .texto-6 h1 {
+  font-size: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+body .encontrar .texto-6 p {
+  font-size: 14px;
+  color: gray;
+  margin-top: 4px;
+  margin-bottom: 25px;
+}
+body .encontrar .texto-6 .descarga {
+  background: linear-gradient(137deg, rgb(165, 9, 162) 5%, rgb(86, 0, 149) 67%, rgb(73, 11, 186) 94%);
+  padding: 6px;
+  color: white;
+  margin: 10px 20px 0px 0px;
+  border-radius: 5px;
+}
+body .sesion {
+  margin-left: 14.5px;
+  font-family: sans-serif;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+body .sesion .RE H1 {
+  color: black;
+  font-size: 19px;
+}
+body .sesion .RE p {
+  color: gray;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+body .sesion .RE .redes {
+  display: contents;
+}
+body .sesion .Menu-2 {
+  margin-top: 5px;
+}
+body .sesion .Menu-2 h1 {
+  font-size: 19px;
+  color: black;
+  margin-bottom: 0px;
+}
+body .sesion .Menu-2 .lista {
+  display: flex;
+  color: gray;
+  font-size: 14px;
+}
+body .sesion .Menu-2 .lista .list {
+  list-style-type: none;
+}
+body .sesion .subscribe {
+  margin-top: 5px;
+}
+body .sesion .subscribe h1 {
+  color: black;
+  font-size: 19px;
+}
+body .sesion .subscribe p {
+  font-size: 14px;
+  margin: 15px 0px 5px 0px;
+}
+body .sesion .subscribe input {
+  width: 220px;
+  height: 26px;
+  border: 1px solid gray;
+}
+body .sesion .subscribe .subs {
+  background: linear-gradient(137deg, rgb(165, 9, 162) 5%, rgb(86, 0, 149) 67%, rgb(73, 11, 186) 94%);
+  padding: 6px;
+  color: white;
+  border: none;
+  margin: 10px 20px 0px 0px;
+  border-radius: 5px;
+  width: 226px;
+  font-size: 18px;
+  height: 30px;
+}
+body .divicion {
+  width: 90%;
+}
+body .ultimo {
+  margin-left: 14.5px;
+  color: gray;
+  font-size: 13px;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
