@@ -187,12 +187,14 @@ body .servicios .texto-2 p {
 }
 body .servicios .grid {
   display: flex;
+  align-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 body .servicios .grid .bloque {
   background-color: white;
-  width: 230px;
-  height: 330px;
+  width: 240px;
+  height: 350px;
   border-radius: 12px;
   margin: 10px 39px;
   text-align: left;
@@ -201,8 +203,8 @@ body .servicios .grid .bloque {
 @media screen and (min-width: 900px) {
   body .servicios .grid .bloque {
     margin: 20px;
-    width: 260px;
-    height: 360px;
+    width: 280px;
+    height: 380px;
   }
 }
 body .servicios .grid .bloque .img {
@@ -263,8 +265,8 @@ body .ciudades .grid-2 .block {
   border-radius: 6px;
   background-position: center;
   background-size: cover;
-  width: 290px;
-  height: 260px;
+  width: 300px;
+  height: 270px;
   margin: auto;
   text-align: left;
   padding: 10px;
