@@ -66,6 +66,12 @@ body .inicio .titulo h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 34px;
 }
+@media screen and (min-width: 900px) {
+  body .inicio .titulo h1 {
+    font-size: 40px;
+    width: 40%;
+  }
+}
 body .inicio .titulo .input {
   display: block;
   margin-top: 10px;
@@ -76,6 +82,11 @@ body .inicio .titulo .input {
   height: 20px;
   border: none;
   border-radius: 5px;
+}
+@media screen and (min-width: 900px) {
+  body .inicio .titulo .input {
+    display: inline-block;
+  }
 }
 body .inicio p {
   color: white;
@@ -190,6 +201,8 @@ body .servicios .grid .bloque {
 @media screen and (min-width: 900px) {
   body .servicios .grid .bloque {
     margin: 20px;
+    width: 260px;
+    height: 360px;
   }
 }
 body .servicios .grid .bloque .img {
@@ -201,7 +214,7 @@ body .servicios .grid .bloque .img {
 body .servicios .grid .bloque .subt-2 {
   color: black;
   font-size: 29px;
-  width: 50%;
+  width: 60%;
 }
 body .servicios .grid .bloque .descrip-2 {
   color: gray;
@@ -232,7 +245,7 @@ body .ciudades .texto-3 {
 }
 body .ciudades .texto-3 h1 {
   color: black;
-  width: 35%;
+  width: 40%;
   margin: 0px;
 }
 body .ciudades .texto-3 p {
@@ -275,6 +288,12 @@ body .ciudades .grid-2 .block .prop {
   padding: 8px;
   box-shadow: 6px 4px 0px 1px rgba(0, 0, 0, 0.65);
   border: none;
+}
+@media screen and (min-width: 900px) {
+  body .ciudades .grid-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 body .venta {
   background: linear-gradient(137deg, rgb(164, 0, 161) 5%, rgb(84, 0, 145) 67%, rgb(4, 0, 123) 94%);

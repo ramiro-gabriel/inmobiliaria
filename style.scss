@@ -64,6 +64,10 @@ body{
                 color: white;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 34px;
+                @media screen and (min-width: 900px){
+                    font-size: 40px;
+                    width: 40%;
+                }
             }
             .input{
                 display: block;
@@ -75,6 +79,9 @@ body{
                 height: 20px;
                 border: none;
                 border-radius: 5px;
+                @media screen and (min-width: 900px){
+                    display: inline-block;
+                }
             }
         }
         p{
@@ -188,11 +195,12 @@ body{
                 height: 330px;
                 border-radius: 12px;
                 margin: 10px 39px;
-
                 text-align: left;
                 padding: 6px;
                 @media screen and (min-width: 900px){
                     margin: 20px;
+                    width: 260px;
+                    height: 360px;
                 }
                 .img{
                     display: block;
@@ -203,7 +211,7 @@ body{
                 .subt-2{
                     color: black;
                     font-size: 29px;
-                    width: 50%;
+                    width: 60%;
                 }
                 .descrip-2{
                     color: gray;
@@ -233,7 +241,7 @@ body{
             margin-left: 14.5px;
             h1{
                 color: black;
-                width: 35%;
+                width: 40%;
                 margin: 0px;
             }
             p{
@@ -276,6 +284,10 @@ body{
                     box-shadow: 6px 4px 0px 1px rgb(0 0 0 / 65%);
                     border: none;
                 }
+            }
+            @media screen and (min-width: 900px){
+                grid-template-columns: repeat(3 , 1fr);
+                grid-template-rows: repeat(2 , 1fr);
             }
         }
     }
